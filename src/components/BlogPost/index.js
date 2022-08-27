@@ -39,7 +39,7 @@ const BlogPostAtom = ({title, slug, date, content, tags, authors, showMeta = tru
         )}
       </header>
       <main>
-        <p dangerouslySetInnerHTML={{__html: content}} itemProp="description" />
+        <div dangerouslySetInnerHTML={{__html: content}} itemProp="description" />
       </main>
       {showMeta && (
         <footer>
